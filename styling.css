@@ -1,0 +1,184 @@
+html{
+    
+    height: 100%;
+    background: radial-gradient(circle , #fff , #ccc);
+}
+
+#container{
+  
+    height: 600px;
+    width: 750px;
+    background-color: rgb(56, 116, 139);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px;
+    position: relative;
+
+}
+
+#score{
+
+    background-color: rgb(226, 181, 98);
+    color: black;
+    padding: 11px;
+    position: absolute;
+    left: 700px;
+    box-shadow: 0px 4px rgb(173, 173, 78);
+
+}
+
+#correct{
+
+    position: absolute;
+    left: 250px;
+    background-color: pink;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+
+    position: absolute;
+    left: 250px;
+    background-color: red;
+    color: white;
+    padding: 11px;
+    display: none;
+
+}
+
+#fruitsContainer{
+
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px red;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+#instruction{
+
+    height: 50px;
+    width: 500px;
+    background-color: rgb(226, 101, 101);
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px purple;
+
+
+}
+
+#choices{
+    height: 100px;
+    width: 450px;
+    margin: 5px auto;
+
+}
+
+.box{
+    width: 82px;
+    height: 85px;
+    background-color: cornsilk;
+    float: left;
+    margin-right: 38px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px grey;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+
+
+}
+
+.box:hover , #startreset:hover{
+
+    background-color: hotpink;
+    color: white;
+    box-shadow: 0px 4px purple;
+}
+
+.box:active , #startreset:active{
+
+    box-shadow: 0px 0px purple;
+    top: 4px;
+
+
+
+}
+
+#box4{
+    margin-right: 0px;
+}
+
+#startreset{
+
+    width: 75px;
+    
+    background-color: cornsilk;
+    padding: 6px;
+    padding-bottom: 1px;
+    margin: 0px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px grey;
+    text-align: center;
+    
+    position: relative;
+    transition: all 0.2s;
+}
+
+#trialsleft{
+
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    
+    background-color: lawngreen;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 0px 4px pink;
+    display: none;
+   
+}
+
+#gameover{
+
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(orange , pink);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 140px;
+    z-index: 2;
+    display: none;
+    
+}
+
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px;
+}
+
+.fruit{
+
+    display: none;
+    position: absolute;
+}
+
